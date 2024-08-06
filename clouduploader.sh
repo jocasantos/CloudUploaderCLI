@@ -11,3 +11,23 @@ if [ $# -ne 2 ]; then
   print_usage
   exit 1
 fi
+
+# Assign arguments to variables
+FILE_PATH=$1
+BUCKET_NAME=$2
+
+# Check if the file exists
+if [ ! -f "$FILE_PATH" ]; then
+  echo "File not found!"
+  exit 1
+fi
+
+# Upload file to S3
+aws s3 cp "$FILE_PATH" "s3://$BUCKET_NAME/"
+
+# Check if the upload was successful
+if [ $? -eq 0 ]; then
+  echo "File uploaded successfully!"
+else
+  echo "File upload failed!"
+fi
