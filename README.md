@@ -30,6 +30,10 @@ learntocloud.guide
 
 # This script uploads files to the cloud
 
+# Ensure AWS_PROFILE is set to your SSO profile
+
+export AWS_PROFILE=your-sso-profile
+
 # Function to print usage
 
 print_usage() {

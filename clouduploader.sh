@@ -16,6 +16,9 @@ fi
 FILE_PATH=$1
 BUCKET_NAME=$2
 
+# Ensure AWS_PROFILE is set to your SSO profile
+export AWS_PROFILE=PowerUserAccess-010526269479
+
 # Check if the file exists
 if [ ! -f "$FILE_PATH" ]; then
   echo "File not found!"
