@@ -27,3 +27,7 @@ learntocloud.guide
 
    - Create a bash script file, #!/bin/bash (see clouduploader.sh)
    - Ensure AWS_PROFILE is set to your SSO profile
+
+5. Run the Script
+   - Make the script executable: chmod +x clouduploader.sh
+   - Run the script: ./clouduploader.sh /path/to/your/file.txt your-s3-bucket-name
