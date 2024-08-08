@@ -2,9 +2,9 @@
 
 learntocloud.guide
 
-## 1. Create a repo at GitHub
+#### 1. Create a repo at GitHub
 
-### 2. Install AWS CLI
+#### 2. Install AWS CLI
 
 - Windows -> just download package "msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi"
 - Check the version "aws --version"
@@ -23,11 +23,12 @@ learntocloud.guide
 - It will ask to log in at your browser.
 - Then choose the output format, put json, and the profile name, choose one or press enter for default.
 
-4. CLI Argument Parsing:
+#### 4. CLI Argument Parsing:
 
-   - Create a bash script file, #!/bin/bash (see clouduploader.sh)
-   - Ensure AWS_PROFILE is set to your SSO profile
+- Create a bash script file, #!/bin/bash (see clouduploader.sh)
+- Ensure AWS_PROFILE is set to your SSO profile
 
-5. Run the Script
-   - Make the script executable: chmod +x clouduploader.sh
-   - Run the script: ./clouduploader.sh /path/to/your/file.txt your-s3-bucket-name
+#### 5. Run the Script
+
+- Make the script executable: chmod +x clouduploader.sh
+- Run the script: ./clouduploader.sh /path/to/your/file.txt your-s3-bucket-name
