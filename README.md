@@ -7,7 +7,7 @@ learntocloud.guide
 #### 2. Install AWS CLI
 
 - Windows -> just download package "msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi"
-- Check the version "aws --version"
+- Check the version "aws --version".
 
 #### 3. Configure AWS CLI with your credentials
 
